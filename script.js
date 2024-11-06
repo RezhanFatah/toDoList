@@ -1,6 +1,8 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("listContainer");
-function addTask(){
+
+function addTask(e){
+    e.preventDefault();
     if(inputBox.value === ''){
         alert("You can't do nothing...DO SOMETHING!");
     } else{
